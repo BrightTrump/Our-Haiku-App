@@ -1,18 +1,13 @@
-import Link from "next/link";
-
-import { Metadata } from "next";
-
-export const metadata = {
-  title: "Home",
-};
+import RegisterForm from "../components/RegisterForm";
 
 export default function Page() {
   return (
     <div>
-      <h1 className="font-bold">Welcome to Haiku App</h1>
-      <p>This App is used for the storage of AI integrated images.</p>
+      <p className="text-center text-2xl text-gray-600 mb-5">
+        Don&rsquo;t have an account? <strong>Create One</strong>{" "}
+      </p>
 
-      <Link href="/login">Login</Link>
+      <RegisterForm />
     </div>
   );
 }
